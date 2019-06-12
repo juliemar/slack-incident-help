@@ -16,7 +16,7 @@ Steps:
 ![](http://i.imgur.com/v3CMJbs.png)
 
 
-**Slack will open a incident dialog**
+**Slack will open an incident dialog**
 
 ![](http://i.imgur.com/17ZdAnO.png)
 
