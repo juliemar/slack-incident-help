@@ -8,18 +8,28 @@ Steps:
 - You have to configure a **slash command** `/incident` with the **Request URL** like `https://your.app.domain/`
 - You have to enable **Interactivity** with the **Request URL** like `https://your.app.domain/action
 
-How is It works?
-Call app with the slash command `/incident`
+**How is It works?**
+
+**Call app with the slash command `/incident`**
+
+
 ![](http://i.imgur.com/v3CMJbs.png)
 
-Slack will open a incident dialog
+
+**Slack will open a incident dialog**
+
 ![](http://i.imgur.com/17ZdAnO.png)
 
-When you submit a form slack will create a incident channel
+
+**When you submit a form slack will create a incident channel**
+
+
 ![](http://i.imgur.com/DTpzPsT.png)
 
 
-And create a post with your first relevant informations
+**And create a post with your first relevant informations**
+
+
 ![](http://i.imgur.com/i8vnzyR.png)
 
 
