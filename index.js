@@ -107,24 +107,26 @@ app.post('/action', (req, res) => {
     ];
 
 
-
-  	 webUser.chat.postMessage(
-        {
-          channel: response.channel.id,
-          text: 'An Incident has been opened',
-          blocks: incidentMessage,
-        },
-      ).then((postedmessage) => {
-        webUser.pins.add({ channel: postedmessage.channel, timestamp: postedmessage.ts });
-      });
-
-
+    postMessage(response.channel.id,incidentMessage);
+    postMessage(process.env.DEFAUL_INC_CHANNEL,incidentMessage);
 	});
 
 
 	res.json();
 });
 
+
+function postMessage(channelId,incidentMessage){
+  webUser.chat.postMessage(
+        {
+          channel:channelId,
+          text: 'An Incident has been opened',
+          blocks: incidentMessage,
+        },
+      ).then((postedmessage) => {
+        webUser.pins.add({ channel: postedmessage.channel, timestamp: postedmessage.ts });
+  });
+}
 
 app.post('/', (req, res) => {
 
