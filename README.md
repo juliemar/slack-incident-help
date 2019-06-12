@@ -6,7 +6,7 @@ I started this project folowing [this](https://tutorials.botsfloor.com/building-
 Steps:
 - run using `npm start`
 - You have to configure a **slash command** `/incident` with the **Request URL** like `https://your.app.domain/`
-- You have to enable **Interactivity** with the **Request URL** like `https://your.app.domain/action
+- You have to enable **Interactivity** with the **Request URL** like `https://your.app.domain/action`
 
 **How is It works?**
 
