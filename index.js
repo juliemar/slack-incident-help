@@ -88,6 +88,10 @@ app.post('/action', (req, res) => {
           },
           {
             type: 'mrkdwn',
+            text: `*Matrix Room*\n<${process.env.MATRIX_DOMAIN}/new?roomId=${response.channel.id}&roomName=${response.channel.id}>`,
+          },
+          {
+            type: 'mrkdwn',
             text: `*Channel*\n<#${response.channel.id}>`,
           },
           {
